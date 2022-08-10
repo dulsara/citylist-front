@@ -53,7 +53,7 @@ export default class City extends Component<Props, State> {
             id: this.state.id
         };
 
-        CityDataService.create(data)
+        CityDataService.update(data)
             .then((response: any) => {
                 this.setState({
                     id: response.data.id,
@@ -64,6 +64,9 @@ export default class City extends Component<Props, State> {
                 console.log(response.data);
             })
             .catch((e: Error) => {
+                this.setState({
+                    message:e.message
+                });
                 console.log(e);
             });
     }

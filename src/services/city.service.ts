@@ -10,7 +10,7 @@ class CityDataService {
         return http.get<ICityData>(`/cities/${id}`);
     }
 
-    create(data: ICityData) {
+    update(data: ICityData) {
         return http.put<ICityData>("/cities", data);
     }
 }

@@ -130,7 +130,7 @@ export default class CityList extends Component<Props, State> {
     }
 
     render() {
-        const { searchName, cities, currentCity, currentIndex,page,count,pageSize} = this.state;
+        const { searchName, cities, currentCity, currentIndex,page,count} = this.state;
 
         return (
             <div className="list row">
@@ -140,7 +140,7 @@ export default class CityList extends Component<Props, State> {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Search by title"
+                        placeholder="Search by City Name"
                         value={searchName}
                         onChange={this.onChangeSearchName}
                     />
