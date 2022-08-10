@@ -134,7 +134,7 @@ export default class City extends Component<Props, State> {
                             className="badge badge-success"
                             onClick={this.editCity}
                         >
-                            SAVE
+                            UPDATE
                         </button>
                         <p>{this.state.message}</p>
                     </div>

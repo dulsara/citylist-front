@@ -186,6 +186,7 @@ export default class CityList extends Component<Props, State> {
                                     {city.name}
                                 </li>
                             ))}
+
                     </ul>
                 </div>
                 <div className="col-md-6">
